@@ -1,2 +1,4 @@
-package schoolrecords;public class Subject {
+package schoolrecords;
+
+public record Subject(String subjectName) {
 }

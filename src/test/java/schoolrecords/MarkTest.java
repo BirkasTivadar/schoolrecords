@@ -1,28 +1,28 @@
-package records;
+package schoolrecords;
 
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
-public class MarkTest {
+class MarkTest {
 
     public static final Subject SUBJECT = new Subject("matematika");
-    public static final Tutor TUTOR = new Tutor("Nagy Lilla", Arrays.asList(SUBJECT));
+    public static final Tutor TUTOR = new Tutor("Nagy Lilla", List.of(SUBJECT));
 
 
     @Test
-    public void nullParameterShouldThrowException() throws NullPointerException {
+    void nullParameterShouldThrowException() throws NullPointerException {
         Exception ex = assertThrows(NullPointerException.class, () -> new Mark(MarkType.A, null, TUTOR));
         assertEquals("Both subject and tutor must be provided!", ex.getMessage());
     }
 
     @Test
-    public void testCreate() {
+    void testCreate() {
         Mark mark = new Mark(MarkType.A, SUBJECT, TUTOR);
         assertEquals(MarkType.A, mark.getMarkType());
         assertEquals(SUBJECT, mark.getSubject());
