@@ -7,9 +7,9 @@ Bevezetés
 Elektronikus osztálynaplót (Enapló) kell megvalósítani. Az alkalmazásban a ClassRecords osztály magát a naplót reprezentálja, ahol felvehetők a diákok (Student). A Student osztályban “tároljuk” a diákok jegyeit Mark. A főbb funkciók a következők: A diákok osztályozhatók, (jegyeket kapnak), a jegyeik alapján általános és tantárgyak szerinti átlag számítható, két tizedesjegy pontossággal. A jegyeik ki is listázhatók a tesztesetekben megadott formában.
 A schoolrecords csomagba dolgozz!
 
-Az osztálydiagramon egyes osztályoknál feltüntetett equals() metódusokat ne implementáljuk!
+![SchoolRecords_UML.png](SchoolRecords_UML.png)
 
-projektfeladathoz tartozó testeseteket megtaláljátok a https://github.com/Training360/strukturavalto-java-public/tree/master/examples/schoolrecords helyen. Másoljátok be a saját projektetekbe! Majd hozzátok létre az osztályokat üres metódus törzsekkel, hogy leforduljon a projekt.
+Az osztálydiagramon egyes osztályoknál feltüntetett equals() metódusokat ne implementáljuk!
 
 Megvalósítási javaslatok
 Subject osztály: Egy attribútuma van, a tantárgy nevének tárolására. Ennek alapján azonosítható a tantárgy.
