@@ -4,6 +4,7 @@ SchoolRecords projektfeladat
 2. modul projektmunka - Enapló
 
 Bevezetés
+
 Elektronikus osztálynaplót (Enapló) kell megvalósítani. Az alkalmazásban a ClassRecords osztály magát a naplót reprezentálja, ahol felvehetők a diákok (Student). A Student osztályban “tároljuk” a diákok jegyeit Mark. A főbb funkciók a következők: A diákok osztályozhatók, (jegyeket kapnak), a jegyeik alapján általános és tantárgyak szerinti átlag számítható, két tizedesjegy pontossággal. A jegyeik ki is listázhatók a tesztesetekben megadott formában.
 A schoolrecords csomagba dolgozz!
 
@@ -12,6 +13,7 @@ A schoolrecords csomagba dolgozz!
 Az osztálydiagramon egyes osztályoknál feltüntetett equals() metódusokat ne implementáljuk!
 
 Megvalósítási javaslatok
+
 Subject osztály: Egy attribútuma van, a tantárgy nevének tárolására. Ennek alapján azonosítható a tantárgy.
 
 Tutor osztály: Két attribútuma van, a tanár neve és a tanított tantárgyak listája, mindkettő konstruktorból tölthető fel.
