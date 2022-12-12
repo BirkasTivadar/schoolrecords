@@ -52,13 +52,16 @@ public List<StudyResultByName> listStudyResults() //a diákok nevét és tanulm�
 public String listStudentNames() //kilistázza a diákok neveit, vesszővel elválasztva
 
 Tippek
+
 A listák mindig privát attribútumok, nem lehet hozzájuk getter metódus! A Random objektumot a ClassRecords osztály konstruktorban vegye át, a tesztelhetőség miatt. A String paraméterek nem lehetnek üresek, vagy null értékűek. Ezt a vizsgálatot célszerűen egy külön, privát metódus végezze, amit minden olyan osztályban létre kell hozni, ahol használatra kerül:
 private boolean isEmpty(String str)
 
 Hibakezelés
+
 Törekedjünk az átfogó hibakezelésre! A teszteseteknél látható módon NullPointerException-t várunk, ha a megfelelő metódust null értékkel hívták meg, ha a String paraméter isEmpty() (lásd a tippeknél) akkor a megfelelő szöveggel IllegalArgumentException-t várunk. Az osztály szintű átlagszámítások során ArithmeticException-t várunk a megfelelő szöveggel, ha valamiért nem lehet a számítást elvégezni (nincs jegy, nincs diák felvéve az osztályba, stb.).
 
 Main
+
 Az elsődleges cél, hogy a tesztesetek hiba nélkül lefussanak. Azonban ha szeretnél belőle működő konzolos alkalmazást, akkor old meg ezt a feladatot is!
 Hozz létre egy SchoolRecordsController osztályt, melyben van a main() metódus! Ez csak példányosítsa az osztályt, és hívja meg a metódusait. Van egy ClassRecords attribútuma, melyet példányosít. Ezen kívül van egy tantárgy lista, és egy tanár lista attribútuma. Ezeket töltsd fel a initSchool() metódusban. (Ezeket nem kell a felhasználótól bekérni.)
 Majd írd ki a következő menüt:
@@ -73,8 +76,11 @@ Majd írd ki a következő menüt:
 9. Diák átlagának kiírása
 10. Diák tantárgyhoz tartozó átlagának kiírása
 11. Kilépés
+
 Amíg a kilépést meg nem nyomja, a menüpont elvégzése után újra ki kell írni a menüt.
+
 Érdemes a menüpontok működését a SchoolRecordsController osztályon belül külön metódusokban implementálni.
+
 Menüpontonként a következő működés az elvárt:
 1. Diákok nevének listázása - kilistázza a diákok neveit (listStudentNames())
 2. Diák név alapján keresése - bekéri a diák nevét, és a diák szöveges reprezentációját írja ki (findStudentByName())
